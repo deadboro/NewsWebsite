@@ -289,6 +289,7 @@
     <Content Include="Views\Partials\LatestNews.cshtml" />
     <Content Include="Views\Partials\TopNavigation.cshtml" />
     <Content Include="Views\News.cshtml" />
+    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
