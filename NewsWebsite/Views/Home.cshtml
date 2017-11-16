@@ -4,16 +4,18 @@
 	Layout = "SiteMaster.cshtml";
 }
 <!-- Hero start -->
-<div class="jumbotron">
-    <h1 class="display-3">@Model.Content.Headline</h1>
-    <div class="lead">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="@Model.Content.FrontPicture.Url?width=600" alt="" />
-                </div>
-                <div class="col-md-8">
-                    @Model.Content.BodyText
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3">@Model.Content.Headline</h1>
+        <div class="lead">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="@Model.Content.FrontPicture.Url?width=600" alt="" />
+                    </div>
+                    <div class="col-md-8">
+                        @Model.Content.BodyText
+                    </div>
                 </div>
             </div>
         </div>
