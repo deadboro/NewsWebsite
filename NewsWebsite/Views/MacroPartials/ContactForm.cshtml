@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+@if (IsPost)
+{
+    //do something
+    <ul>
+        <li>@Request["userName"]</li>
+        <li>@Request["userEmail"]</li>
+        <li>@Request["userMsg"]</li>
+    </ul>
+}
+else
+{
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="userName">Your name</label>
+            <input type="text" required class="form-control" id="userName" name="userName" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="userEmail">Your email</label>
+            <input type="email" required class="form-control" id="userEmail" name="userEmail" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="userMsg">Your message</label>
+            <textarea id="userMsg" class="form-control" name="userMsg" placeholder="Write your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+}
