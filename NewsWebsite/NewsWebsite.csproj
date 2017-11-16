@@ -290,6 +290,7 @@
     <Content Include="Views\Partials\TopNavigation.cshtml" />
     <Content Include="Views\News.cshtml" />
     <Content Include="README.md" />
+    <Content Include="Views\MacroPartials\SearchResults.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

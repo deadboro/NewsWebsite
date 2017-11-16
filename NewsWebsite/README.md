@@ -3,4 +3,4 @@
 The website we created in class.
 
 Login credentials:<br/>
-**admin@eal.dk** // **Odense2017!*
+**admin@eal.dk** // **Odense2017!* [

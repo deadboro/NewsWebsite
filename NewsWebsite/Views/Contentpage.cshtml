@@ -3,23 +3,13 @@
 @{
 	Layout = "SiteMaster.cshtml";
 }
-
-    <!-- Hero start -->
-    <div class="jumbotron">
-        <h1 class="display-3">@Model.Content.Headline</h1>
-        <div class="lead">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        @Model.Content.BodyText
-                    </div>
-                </div>
+<div class="lead">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-3">@Model.Content.Headline</h1>
+                @Model.Content.BodyText
             </div>
         </div>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
     </div>
-    <!-- Hero end-->
+</div>

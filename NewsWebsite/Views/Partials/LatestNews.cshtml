@@ -5,7 +5,7 @@
         @{
                 //get all the news from the News section, but only the first 3
                 var news = Model.Content.Site().Descendants<News>()
-                    .OrderBy(x => x.CreateDate)
+                    .OrderBy(x => x.NewsDate)
                     .Reverse()
                     .Take(3);
 
@@ -14,7 +14,7 @@
                 {
                 <div class="col-md-4">
                     <h2>@item.Headline</h2>
-                    <div>@item.CreateDate.ToShortTimeString()</div>
+                    <div>@item.NewsDate.ToString("dd/MM/yyyy")</div>
                     <p>@item.Excerpt</p>
                     <img src="@item.NewsImage.Url" class="img-fluid" alt="" />
                     <a href="@item.Url">Read more</a>
